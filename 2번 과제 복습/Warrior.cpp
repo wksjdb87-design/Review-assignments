@@ -16,13 +16,13 @@ void Warrior::attack(Monster* monster)
 	if (damage < 0)
 	{
 		damage = 1;
-		cout << nickname << "의 강력한 마법 공격!\n";
+		cout << nickname << "의 강력한 휘두르기 공격!\n";
 		cout << "몬스터가" << damage << "만큼 데미지를 받았습니다" << endl;
 		monster->setHP(monster->getHP() - damage);
 	}
 	if (damage > 0)
 	{
-		cout << nickname << "의 강력한 마법 공격!\n";
+		cout << nickname << "의 강력한 휘두르기 공격!\n";
 		cout << "몬스터가 [" << damage << "] 만큼 데미지를 받았습니다" << endl;
 		monster->setHP(monster->getHP() - damage);
 	}
